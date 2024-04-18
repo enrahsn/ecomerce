@@ -1,4 +1,4 @@
-class ImgAssets{
+class AppImgAssets{
   static const String rootImgs = "assets/images";
   static const String onbrgng1 = rootImgs + "/onbrgng1.png";
   static const String onbrgng2 = "$rootImgs/onbrgng2.png";
