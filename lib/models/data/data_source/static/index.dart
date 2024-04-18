@@ -1,0 +1,2 @@
+export 'static.dart';
+
