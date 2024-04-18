@@ -16,8 +16,16 @@ class OnBoarding extends StatelessWidget {
           children: [
             Text(
           onBoardingList[i].title!,
-          style: Theme.of(context).textTheme.displayLarge,
+          // style: Theme.of(context).textTheme.displayMedium,
+          style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
         ),
+        const SizedBox(height: 80,),
+        Image.asset(onBoardingList[i].image!,height: 600,),
+        const SizedBox(height: 80,),
+        Container(
+          width: double.infinity,
+          alignment: Alignment.center,
+          child: Text(onBoardingList[i].description!,textAlign: TextAlign.center,style:const TextStyle(height: 2))),
         ]
         ),
         ),
