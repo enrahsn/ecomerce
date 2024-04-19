@@ -18,7 +18,7 @@ class Market extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const OnBoarding(),
-
+routes: routes,
     );
   }
 }
