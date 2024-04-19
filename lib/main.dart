@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'models/core/route.dart';
 import 'views/screens/on_boarding.dart';
 void main() {
   runApp(const Market());
