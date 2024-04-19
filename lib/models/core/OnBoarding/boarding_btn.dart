@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../controller/boarding_ctrl.dart';
 import '../../../models/constant/colors.dart';
 
-class MyBoardingBtn extends StatelessWidget {
+class MyBoardingBtn extends GetView<BoardingCtrlImp> {
   const MyBoardingBtn({super.key});
 
   @override

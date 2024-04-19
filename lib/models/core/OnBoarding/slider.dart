@@ -13,6 +13,7 @@ class MySlider extends GetView<BoardingCtrlImp> {
     return PageView.builder(
       onPageChanged: (val) {
         // controller.changeIndex(val);
+        controller.onPageChanged(val);
         print(val);
       },
       itemCount: onBoardingList.length,

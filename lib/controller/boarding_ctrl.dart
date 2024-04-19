@@ -8,6 +8,8 @@ abstract class BoardingCtrl extends GetxController {
   void onPageChanged(int i);
 }
 class BoardingCtrlImp extends BoardingCtrl {
+  int currentPageIndex = 0;
+  // PageController pageController = PageController(); 
   @override
   void onSkip() {
     // Get.offAllNamed();// TODO: implement onSkip
@@ -28,7 +30,8 @@ class BoardingCtrlImp extends BoardingCtrl {
     
       @override
       void onPageChanged(int i) {
-    // TODO: implement onPageChanged
+currentPageIndex = i;
+update();
     throw UnimplementedError();
       }
     }
