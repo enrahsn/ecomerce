@@ -1,38 +1,33 @@
-
-import 'package:ecommerce/models/constant/colors.dart';
-import 'package:ecommerce/models/data/data_source/static/index.dart';
-import 'package:ecommerce/models/data/data_source/static/static.dart';
 import 'package:flutter/material.dart';
 
-class OnBoarding extends StatelessWidget {
-  const OnBoarding({super.key});
+import '../widgets/OnBoarding/boarding_btn.dart';
+import '../widgets/OnBoarding/dot_boarding.dart';
+import '../widgets/OnBoarding/slider.dart';
 
+class OnBoarding extends StatelessWidget {
+  const OnBoarding({super.key, });
+
+  // double hZise = 30;
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return const Scaffold(
       body: SafeArea(
-        child: PageView.builder(
-          itemCount: onBoardingList.length,
-          itemBuilder: (context, i) => Column(
+        child: Column(
           children: [
-            Text(
-          onBoardingList[i].title!,
-          // style: Theme.of(context).textTheme.displayMedium,
-          style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
-        ),
-        const SizedBox(height: 50,),
-        Image.asset(onBoardingList[i].image!,height: 600,fit: BoxFit.cover,),
-        const SizedBox(height: 50,),
-        Container(
-          width: double.infinity,
-          alignment: Alignment.center,
-          child: Text(onBoardingList[i].description!,textAlign: TextAlign.center,
-          style:const TextStyle(height: 2,color: AppColor.grey,fontWeight: FontWeight.bold,fontSize: 17),)),
-        ]
-        ),
+            Expanded(flex: 3,
+              child: MySlider()
+            ),
+        Expanded(flex: 1,
+                child: Column(children: [
+      MyDotBoarding(),
+                Spacer(flex: 2,),
+              MyBoardingBtn(),
+            ],
+          ),
+        )
+          ],
         ),
       ),
     );
   }
-
 }
