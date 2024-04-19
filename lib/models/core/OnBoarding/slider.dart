@@ -11,6 +11,7 @@ class MySlider extends GetView<BoardingCtrlImp> {
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
+      controller: controller.pageController,
       onPageChanged: (val) {
         // controller.changeIndex(val);
         controller.onPageChanged(val);

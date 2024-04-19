@@ -18,7 +18,7 @@ class MyDotBoarding extends StatelessWidget {
                   (index) => AnimatedContainer(
                         duration: const Duration(milliseconds: 900),
                         margin: const EdgeInsets.only(right: 5),
-                        width: controller.currentPageIndex== index ? 8 : 5,
+                        width:  controller.currentPageIndex== index ? 8 : 5,
                         height: controller.currentPageIndex== index ? 8 : 5,
                         decoration: BoxDecoration(
                             // color: _currentPage ==index ? AppColor.primary : AppColor.grey,

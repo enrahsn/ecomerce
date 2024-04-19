@@ -15,6 +15,7 @@ class MyBoardingBtn extends GetView<BoardingCtrlImp> {
                   height: 40,
                   child: MaterialButton(onPressed: () {
                   // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
+                controller.onNext();
                 },
                 padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 4),
                 color: kPrimaryColor,
