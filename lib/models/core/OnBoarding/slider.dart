@@ -6,7 +6,10 @@ import '../../../models/constant/colors.dart';
 import '../../../models/data/data_source/static/static.dart';
 
 class MySlider extends GetView<BoardingCtrlImp> {
-  const MySlider({super.key});
+    MySlider({
+
+  });
+
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +28,8 @@ class MySlider extends GetView<BoardingCtrlImp> {
         Text(
           onBoardingList[i].title!,
           // style: Theme.of(context).textTheme.displayMedium,
-          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          // style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          style: Theme.of(context).textTheme.displayLarge,
         ),
         const SizedBox(
           height: 30,
@@ -45,11 +49,7 @@ class MySlider extends GetView<BoardingCtrlImp> {
             child: Text(
               onBoardingList[i].description!,
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                  height: 2,
-                  color: AppColor.grey,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 17),
+          style: Theme.of(context).textTheme.displaySmall,
             )),
         // const SizedBox(height: 10),
       ]),
