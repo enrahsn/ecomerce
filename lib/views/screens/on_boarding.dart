@@ -1,3 +1,4 @@
+import 'package:ecommerce/models/constant/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,6 +17,7 @@ class OnBoarding extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(BoardingCtrlImp());
     return const Scaffold(
+      backgroundColor: AppColor.backgrond,
       body: SafeArea(
         child: Column(
           children: [

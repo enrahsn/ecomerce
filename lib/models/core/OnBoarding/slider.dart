@@ -6,11 +6,9 @@ import '../../../models/constant/colors.dart';
 import '../../../models/data/data_source/static/static.dart';
 
 class MySlider extends GetView<BoardingCtrlImp> {
-    MySlider({
+    const MySlider({super.key, 
 
   });
-
-
   @override
   Widget build(BuildContext context) {
     return PageView.builder(
@@ -29,7 +27,9 @@ class MySlider extends GetView<BoardingCtrlImp> {
           onBoardingList[i].title!,
           // style: Theme.of(context).textTheme.displayMedium,
           // style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-          style: Theme.of(context).textTheme.displayLarge,
+          // style: Theme.of(context).textTheme.displayLarge,
+          // headline1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
+          style:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
         ),
         const SizedBox(
           height: 30,
@@ -49,7 +49,9 @@ class MySlider extends GetView<BoardingCtrlImp> {
             child: Text(
               onBoardingList[i].description!,
               textAlign: TextAlign.center,
-          style: Theme.of(context).textTheme.displaySmall,
+        // headText1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
+        style:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
+          // style: Theme.of(context).textTheme.displaySmall,
             )),
         // const SizedBox(height: 10),
       ]),
