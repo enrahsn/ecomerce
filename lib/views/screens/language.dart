@@ -15,10 +15,16 @@ class MyLanguage extends StatelessWidget {
           children: [
           const Text("Choose your language",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
           Container(
-          padding:const EdgeInsets.symmetric(horizontal:100),
+          padding:const EdgeInsets.symmetric(horizontal:60,vertical: 20),
         width:double.infinity,
             
-        child:const MyButton(txt:'Ar'),
+        child: MyButton(txt:'En',onPressed: () {        },),
+        ),
+          Container(
+          padding:const EdgeInsets.symmetric(horizontal:60,vertical: 20),
+        width:double.infinity,
+            
+        child: MyButton(txt:'Ar',onPressed: () {        },),
         ),
           ],),
       
