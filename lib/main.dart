@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'models/core/route.dart';
+import 'models/core/sevices/services.dart';
 import 'views/screens/on_boarding.dart';
-void main() {
-  runApp( Market());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initServices();
+  runApp( const Market());
 }
 class Market extends StatelessWidget {
           const Market({super.key, 
