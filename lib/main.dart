@@ -14,6 +14,8 @@ class Market extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Market',
       theme: ThemeData(
+        headline1:TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
+        primarySwatch: Colors.blue,
         brightness: Brightness.dark,
         fontFamily: 'Cairo',
         useMaterial3: true,

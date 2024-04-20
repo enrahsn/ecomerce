@@ -2,6 +2,8 @@ import 'package:ecommerce/models/data/data_source/static/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../models/core/class/app_route.dart';
+
 abstract class BoardingCtrl extends GetxController {
   void onSkip();
   void onNext();
@@ -18,18 +20,14 @@ class BoardingCtrlImp extends BoardingCtrl {
   void onNext() {
     currentPageIndex++;
     if (currentPageIndex > onBoardingList.length -1) {
-      Get.offAllNamed(AppRoutes.login);
+      Get.offAllNamed(AppRoute.login);
+    } else {
     pageController.animateToPage(currentPageIndex,
         duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);
     // throw UnimplementedError();
   }
-
-  @override
-  void onPageChanged(int i) {
-    currentPageIndex = i;
-    update();
-    // throw UnimplementedError();
   }
+
 
   @override
   void onInit() {
@@ -37,19 +35,13 @@ class BoardingCtrlImp extends BoardingCtrl {
     pageController = PageController();
     // throw UnimplementedError();
   }
-  // PageController pageController = PageController();
-  @override
-  void onSkip() {
-    // Get.offAllNamed();// TODO: implement onSkip
-    throw UnimplementedError();
-  }
-}
+  //
 
   @override
   void onPageChanged(int i) {
     // TODO: implement onPageChanged
   }
-
+  
   @override
   void onSkip() {
     // TODO: implement onSkip
