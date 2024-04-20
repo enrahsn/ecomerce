@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'models/core/localization/trans.dart';
 import 'models/core/route.dart';
 import 'models/core/sevices/services.dart';
 import 'views/screens/on_boarding.dart';
@@ -19,6 +20,7 @@ class Market extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
       title: 'Market',
       theme: ThemeData(
