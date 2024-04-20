@@ -29,7 +29,7 @@ class MySlider extends GetView<BoardingCtrlImp> {
           // style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           // style: Theme.of(context).textTheme.displayLarge,
           // headline1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
-          style:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
+          style:const TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: AppColor.black,),
         ),
         const SizedBox(
           height: 30,
@@ -50,7 +50,7 @@ class MySlider extends GetView<BoardingCtrlImp> {
               onBoardingList[i].description!,
               textAlign: TextAlign.center,
         // headText1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
-        style:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
+        style:const TextStyle(fontWeight: FontWeight.bold,fontSize: 14,color: AppColor.grey,height: 2),
           // style: Theme.of(context).textTheme.displaySmall,
             )),
         // const SizedBox(height: 10),

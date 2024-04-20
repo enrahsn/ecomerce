@@ -8,8 +8,7 @@ class MyTranslation extends Translations {
         },
         'ar': {
           'hello': 'مرحبا',
-        },
-       
+        }
       };
   // throw UnimplementedError();
 }

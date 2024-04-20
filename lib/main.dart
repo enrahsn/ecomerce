@@ -24,11 +24,11 @@ class Market extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Market',
       theme: ThemeData(
+        fontFamily: 'PlayfairDisplay',
         // headline1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
         // headText1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
-        fontFamily: 'PlayfairDisplay',
         useMaterial3: true,
       ),
       home: const OnBoarding(),
