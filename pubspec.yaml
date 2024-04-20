@@ -53,8 +53,8 @@ dependencies:
   geolocator: ^8.0.5
   geocoding: ^2.0.4
   # Firebase And Notification 
-  firebase_messaging: ^11.2.7
-  firebase_core: ^1.12.0
+  # firebase_messaging: ^11.2.7
+  # firebase_core: ^1.12.0
   flutter_local_notifications: ^9.5.3+1
   cloud_firestore: ^3.1.9
   # Local Data Cache
@@ -122,7 +122,11 @@ flutter:
         - asset: assets/fonts/FS_Cairo.ttf
         - asset: assets/fonts/FS_Cairo_Border.ttf
         - asset: assets/fonts/FS_Cairo_Shatter.ttf
-          style: italic
+          weight: 700
+    - family: PlayfairDisplay
+      fonts:
+        - asset: assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf
+        - asset: assets/fonts/PlayfairDisplay-VariableFont_wght.ttf
           weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
