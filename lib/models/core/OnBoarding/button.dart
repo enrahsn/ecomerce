@@ -5,9 +5,10 @@ import 'package:get/get.dart';
 import '../../../controller/boarding_ctrl.dart';
 import '../../../models/constant/colors.dart';
 
-class MyBoardingBtn extends GetView<BoardingCtrlImp> {
-  const MyBoardingBtn({super.key});
+abstract class MyButton extends GetView<BoardingCtrlImp> {
+  MyButton({super.key, this.txt, Function()? onPressed});
 
+late final String? txt;
   @override
   Widget build(BuildContext context) {
     return  Container(
@@ -15,7 +16,7 @@ class MyBoardingBtn extends GetView<BoardingCtrlImp> {
                   height: 40,
                   child: MaterialButton(onPressed: () {
                   // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
-                controller.onNext();
+                // controller.onNext();
                 },
                 padding: const EdgeInsets.symmetric(horizontal: 100,vertical: 4),
                 color: kPrimaryColor,
@@ -23,8 +24,8 @@ class MyBoardingBtn extends GetView<BoardingCtrlImp> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)
                 ),
-                child: const Text("Continue",
-                style: TextStyle(
+                child: Text(txt!,
+                style: const TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.bold
                 ),
