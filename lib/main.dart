@@ -5,6 +5,7 @@ import 'models/core/localization/trans.dart';
 import 'models/core/route.dart';
 import 'models/core/sevices/services.dart';
 import 'views/screens/language.dart';
+import 'views/screens/on_boarding.dart';
 // import 'views/screens/on_boarding.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,7 +37,8 @@ class Market extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
-      home: const MyLanguage(),
+      // home: const MyLanguage(),
+      home: const OnBoarding(),
 routes: routes,
     );
   }

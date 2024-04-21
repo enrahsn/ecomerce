@@ -9,12 +9,7 @@ import '../../models/core/OnBoarding/slider.dart';
 
 class OnBoarding extends GetView<BoardingCtrlImp> {
         const OnBoarding({super.key, 
-
   });
-
-
-
-
   // double hZise = 30;
   @override
   Widget build(BuildContext context) {
@@ -33,9 +28,7 @@ class OnBoarding extends GetView<BoardingCtrlImp> {
                   const Spacer(
                     flex: 2,
                   ),
-                  MyButton(txt: 'Continue',onPressed: () {
-                    controller.onNext();
-                  },),
+                  MyButton(txt: 'Continue',onPressed: () {controller.onNext();},),
                 ],
               ),
             )

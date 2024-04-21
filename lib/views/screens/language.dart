@@ -21,11 +21,11 @@ class MyLanguage extends GetView<LocaleCtrl> {
               // style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               style: TextStyle(fontSize: 16, ),
             ),
-            const Spacer(),
+            // const Spacer(),
             // const Text("1".tr,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
-              width: double.infinity,
+              // width: double.infinity,
               child: MyButton(
                 txt: 'English',
                 onPressed: () {
@@ -35,8 +35,8 @@ class MyLanguage extends GetView<LocaleCtrl> {
               ),
             ),
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
-              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 10),
+              // width: double.infinity,
               child: MyButton(
                 txt: 'عربي',
                 onPressed: () {

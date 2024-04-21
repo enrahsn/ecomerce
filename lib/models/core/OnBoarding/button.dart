@@ -13,8 +13,8 @@ import '../../../models/constant/colors.dart';
  final String? txt;
   @override
   Widget build(BuildContext context) {
-     double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
-    double scrWidth = MediaQuery.of(context).size.width;
+    double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
+    double scrWidth  = MediaQuery.of(context).size.width;
    
     return  Container(
                 padding: EdgeInsets.symmetric(horizontal: scrWidth * .1,vertical: scrHeight * .071),
@@ -23,7 +23,8 @@ import '../../../models/constant/colors.dart';
                   height: scrHeight * .071,
                   margin: const EdgeInsets.only(bottom: 30),
                   // child: MaterialButton(onPressed: () {},
-                  child: MaterialButton(onPressed:onPressed,
+                  child: MaterialButton(
+                    onPressed:onPressed,
                   // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
                 // controller.onNext();
                 color: kPrimaryColor,
