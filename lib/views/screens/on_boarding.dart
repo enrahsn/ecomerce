@@ -15,7 +15,7 @@ class OnBoarding extends GetView<BoardingCtrlImp> {
   // double hZise = 30;
   @override
   Widget build(BuildContext context) {
-    double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
+    // double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
     double scrWidth = MediaQuery.of(context).size.width;
 
     Get.put(BoardingCtrlImp());
@@ -60,7 +60,6 @@ class OnBoarding extends GetView<BoardingCtrlImp> {
                       child: const Text(
                         'Continue',
                         style: TextStyle(
-                          
                             color: Colors.white,
                             backgroundColor: kPrimaryColor,
                             // fontSize: scrWidth * .04,p

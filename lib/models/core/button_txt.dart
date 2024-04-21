@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constant/colors.dart';
-import '../constant/size_config.dart';
+// import '../constant/size_config.dart';
 
 class ButtonTxt extends StatelessWidget {
   final void Function()? onPressed;  
@@ -14,7 +14,7 @@ class ButtonTxt extends StatelessWidget {
     double scrWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: scrWidth * .1),
-      child: Container(
+      child: SizedBox(
         // width: SizeConfig.scrWidth,
         width: scrWidth * .71,
          child: MaterialButton(

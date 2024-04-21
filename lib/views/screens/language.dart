@@ -2,8 +2,8 @@ import 'package:ecommerce/models/core/localization/change_local.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../models/core/button.darty';
 import '../../models/core/class/app_route.dart';
+import '../../models/core/onboarding/button.dart';
 
 class MyLanguage extends GetView<LocaleCtrl> {
   const MyLanguage({super.key});

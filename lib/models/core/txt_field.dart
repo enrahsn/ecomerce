@@ -1,6 +1,7 @@
 // import '../core/colors.dart';
 import 'package:flutter/material.dart';
-import '../core/colors.dart';
+
+import '../constant/colors.dart';
 class MyTxtField extends StatelessWidget {
   const MyTxtField({super.key,  this.hint, this.maxLines=1});
   final String? hint;
@@ -27,7 +28,7 @@ class MyTxtField extends StatelessWidget {
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
         borderSide: BorderSide(
-          color:color ?? Colors.white,
+          color:color ?? Colors.black,
           width: 2,
         )
         );

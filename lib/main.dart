@@ -34,7 +34,7 @@ class Market extends StatelessWidget {
         // headline1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
         // headText1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
         primarySwatch: Colors.blue,
-        brightness: Brightness.dark,
+        // brightness: Brightness.dark,
         useMaterial3: true,
       ),
       // home: const MyLanguage(),
