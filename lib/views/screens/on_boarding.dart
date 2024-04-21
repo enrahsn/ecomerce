@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 import '../../controller/boarding_ctrl.dart';
 import '../../models/core/onboarding/button.dart';
-import '../../models/core/buttony.dart';
+import '../../models/core/button_txt.dart';
 import '../../models/core/onboarding/dot_boarding.dart';
 import '../../models/core/onboarding/slider.dart';
 

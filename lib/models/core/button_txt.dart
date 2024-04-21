@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import '../constant/colors.dart';
 import '../constant/size_config.dart';
 
-class Buttony extends StatelessWidget {
+class ButtonTxt extends StatelessWidget {
   final void Function()? onPressed;  
   final String? txt;
 
-  const Buttony({super.key, this.onPressed, this.txt});
+  const ButtonTxt({super.key, this.onPressed, this.txt});
   @override
   Widget build(BuildContext context) {
     double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
