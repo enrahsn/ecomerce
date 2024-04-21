@@ -1,6 +1,7 @@
 export 'button_txt.dart';
 export 'route.dart';
 export 'txt_field.dart';
+export 'txt_form_auth.dart';
 export 'txt_login.dart';
 export 'class/index.dart';
 export 'localization/index.dart';

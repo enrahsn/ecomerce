@@ -10,7 +10,7 @@ class MyTxtField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: TextField(
+      body: TextFormField(
         maxLines: maxLines,
         cursorColor: kPrimaryColor,
         decoration: InputDecoration(
@@ -28,7 +28,7 @@ class MyTxtField extends StatelessWidget {
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(8),
         borderSide: BorderSide(
-          color:color ?? Colors.black,
+          color:color ?? Colors.red,
           width: 2,
         )
         );

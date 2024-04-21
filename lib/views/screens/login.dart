@@ -3,6 +3,7 @@ import 'package:ecommerce/models/constant/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/core/txt_field.dart';
+import '../../models/core/txt_form_auth.dart';
 // import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
@@ -24,7 +25,7 @@ class Login extends StatelessWidget {
       backgroundColor: Colors.white,
       title: const Text('Sign In',style: TextStyle(color: Colors.black),),) ,
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 40),
+        padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 35),
         child: ListView(
           children: [
           const SizedBox(height: 20,),
@@ -35,10 +36,12 @@ class Login extends StatelessWidget {
             margin: const EdgeInsets.symmetric(horizontal: 25),
             child: const Text("Sign In With Your Email And Password Or Continue With Social Media ",
             style: TextStyle(fontSize: 16,color: AppColor.black),textAlign: TextAlign.center,)),
-          const SizedBox(height: 25,),
-        const MyTxtField(hint: 'email'),
-          const SizedBox(height: 10,),
-        const MyTxtField(hint: 'password')
+          const SizedBox(height: 65,),
+        // const MyTxtField(hint: 'email'),
+        const MyTxtFormAuth(),
+           const SizedBox(height: 10,),
+        const MyTxtFormAuth(),
+        // const MyTxtField(hint: 'password'),
           ],
           ),),
     );
