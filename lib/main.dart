@@ -1,3 +1,4 @@
+import 'package:ecommerce/models/core/localization/change_local.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'models/core/localization/trans.dart';
@@ -20,7 +21,10 @@ class Market extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    LocaleCtrl localeCtrl = Get.put(LocaleCtrl());
     return GetMaterialApp(
+      locale: localeCtrl.language,
+      // fallbackLocale: const Locale('en', 'US'),
       translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
       title: 'Market',

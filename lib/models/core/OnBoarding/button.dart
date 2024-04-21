@@ -33,7 +33,7 @@ import '../../../models/constant/colors.dart';
                 ),
                 child: Text(txt!,
                 style: TextStyle(
-                  fontSize: scrWidth * .045,
+                  fontSize: scrWidth * .04,
                   fontWeight: FontWeight.bold
                 ),
                 ),
