@@ -4,13 +4,13 @@ import '../constant/colors.dart';
 
 class MyTxtFormAuth extends StatelessWidget {
   const MyTxtFormAuth({
-    Key? key,
+    super.key,
     this.lbl,
     this.hint,
     this.icon,
-    required this.maxLines,
+     this.maxLines=1,
     this.mycontroller,
-  }) : super(key: key);
+  });
 final String? lbl;
 final String? hint;
  final IconData? icon;
@@ -18,33 +18,32 @@ final String? hint;
   final TextEditingController? mycontroller;
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      controller: mycontroller,
-      // validator: validator,
-      // keyboardType: keyboardType,
-      // obscureText: obscureText,
-       maxLines: maxLines,
-      decoration: InputDecoration(
-        floatingLabelBehavior: FloatingLabelBehavior.always,
-        // hintText: hint!,
-        hintText: 'email',
-        hintStyle: const TextStyle(color: AppColor.grey, fontSize: 14),
-        label: Container(
-          // ignore: sort_child_properties_last
-          margin: const EdgeInsets.symmetric(horizontal: 8),
-          child: const Text('Email'),
-          // child: Text(lbl!),
-        ),
-        contentPadding: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
-        // suffixIcon: const Icon(Icons.email_outlined),
-        //  prefixIcon: Icon(
-         suffixIcon: const 
-            Icon(Icons.email_outlined,
-            color: kMainColor,
+    return Container(
+      margin: const EdgeInsets.only(top: 20),
+      child: TextFormField(
+        controller: mycontroller,
+        // validator: validator,
+        // keyboardType: keyboardType,
+        // obscureText: obscureText,
+         maxLines: maxLines,
+        decoration: InputDecoration(
+          floatingLabelBehavior: FloatingLabelBehavior.always,
+          hintText: hint!,
+          // hintText: 'email',
+          hintStyle: const TextStyle(color: AppColor.grey, fontSize: 14),
+          label: Container(
+            // ignore: sort_child_properties_last
+            margin: const EdgeInsets.symmetric(horizontal: 8),
+            // child: const Text('Email'),
+            child: Text(lbl!),
           ),
-        border: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(Radius.circular(30.0)),
-          // borderRadius: BorderRadius.circular(10.0),
+          contentPadding: const EdgeInsets.symmetric(vertical: 5, horizontal: 30),
+          //  prefixIcon: Icon(
+           suffixIcon:           Icon(icon),
+          border: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(30.0)),
+            // borderRadius: BorderRadius.circular(10.0),
+          ),
         ),
       ),
     );

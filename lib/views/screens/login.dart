@@ -1,8 +1,7 @@
 
-import 'package:ecommerce/models/constant/colors.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/core/txt_field.dart';
+import '../../models/core/title_txt.dart';
 import '../../models/core/txt_form_auth.dart';
 // import 'package:get/get.dart';
 
@@ -12,14 +11,6 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // theme: ThemeData(
-      //   fontFamily: 'PlayfairDisplay',
-      //   // headline1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: AppColor.black,),
-      //   // headText1:const TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: AppColor.grey,height: 2),
-      //   primarySwatch: Colors.blue,
-      //   brightness: Brightness.dark,
-      //   useMaterial3: true,
-      // ),
       appBar:AppBar(centerTitle: true,elevation: 0,
       leading: IconButton(onPressed: (){}, icon: const Icon(Icons.menu)),
       backgroundColor: Colors.white,
@@ -29,18 +20,13 @@ class Login extends StatelessWidget {
         child: ListView(
           children: [
           const SizedBox(height: 20,),
+          MyTitleAndTxt(title: 'Welcom Back',txt: 'Sign In With Your Email And Password Or Continue With Social Media ',),
           // const Text("2".tr),
-          const Text("Welome Back",style: TextStyle(fontSize: 20,color: AppColor.black),textAlign: TextAlign.center,),
-          const SizedBox(height: 10,),
-          Container(
-            margin: const EdgeInsets.symmetric(horizontal: 25),
-            child: const Text("Sign In With Your Email And Password Or Continue With Social Media ",
-            style: TextStyle(fontSize: 16,color: AppColor.black),textAlign: TextAlign.center,)),
-          const SizedBox(height: 65,),
+         const SizedBox(height: 65,),
         // const MyTxtField(hint: 'email'),
-        const MyTxtFormAuth(),
-           const SizedBox(height: 10,),
-        const MyTxtFormAuth(),
+        const MyTxtFormAuth(hint: 'Enter Your Email',lbl: 'Email',icon: Icons.email_outlined,),
+        const SizedBox(height: 30,),
+        const MyTxtFormAuth(hint: 'Enter Your Passwoed',lbl: 'Password',icon: Icons.lock_clock_outlined),
         // const MyTxtField(hint: 'password'),
           ],
           ),),
