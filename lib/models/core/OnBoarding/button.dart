@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../controller/boarding_ctrl.dart';
-import '../../../models/constant/colors.dart';
+import '../../constant/colors.dart';
 
  class MyButton extends GetView<BoardingCtrlImp> {
   // MyButton({super.key, this.txt, Function()? onPressed});

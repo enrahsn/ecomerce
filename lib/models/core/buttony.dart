@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 import '../constant/colors.dart';
+import '../constant/size_config.dart';
 
-class MyButton extends StatelessWidget {
-  const MyButton({super.key, this.txt, Function()? onPressed});
+class Buttony extends StatelessWidget {
+  final void Function()? onPressed;  
   final String? txt;
+
+  const Buttony({super.key, this.onPressed, this.txt});
   @override
   Widget build(BuildContext context) {
     double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
@@ -12,13 +15,15 @@ class MyButton extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: scrWidth * .1),
       child: Container(
-        height: scrHeight * .071,
         // width: SizeConfig.scrWidth,
         width: scrWidth * .71,
-        decoration: BoxDecoration(
-          color: kMainColor,
-          borderRadius: BorderRadius.circular(scrWidth * .02),
-        ),
+         child: MaterialButton(
+                    onPressed:onPressed,
+        height: scrHeight * .071,
+        // decoration: BoxDecoration(
+        //   color: kMainColor,
+        //   borderRadius: BorderRadius.circular(scrWidth * .02),
+        // ),
         child: Center(
           child: Text(
             txt!,
@@ -29,6 +34,7 @@ class MyButton extends StatelessWidget {
               fontWeight: FontWeight.w600,
             ),
             textAlign: TextAlign.center,
+          ),
           ),
         ),
       ),

@@ -12,10 +12,10 @@ class LocaleCtrl extends GetxController {
     // language = Locale(langcode);
     Locale locale = Locale(langcode);
     myServices.sharedPreferences.setString('lang', langcode);
-    myServices.sharedPreferences.setBool('isLangSelected', true);
+    // myServices.sharedPreferences.setBool('isLangSelected', true);
     // Get.updateLocale(Locale(langcode));
     Get.updateLocale(locale);
-    Get.back();
+    // Get.back();
   }
 
 @override

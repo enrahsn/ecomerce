@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../controller/boarding_ctrl.dart';
-import '../../../models/constant/colors.dart';
-import '../../../models/data/data_source/static/static.dart';
+import '../../constant/colors.dart';
+import '../../data/data_source/static/static.dart';
 
 class MyDotBoarding extends StatelessWidget {
   const MyDotBoarding({super.key});
