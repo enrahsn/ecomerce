@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../models/core/class/app_route.dart';
-import '../../models/core/onboarding/button.dart';
+import '../../models/core/onboarding/button_h.dart';
 
 class MyLanguage extends GetView<LocaleCtrl> {
   const MyLanguage({super.key});
@@ -26,7 +26,7 @@ class MyLanguage extends GetView<LocaleCtrl> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 20),
               // width: double.infinity,
-              child: MyButton(
+              child: HyButton(
                 txt: 'English',
                 onPressed: () {
                   controller.changeLang('en');
@@ -37,7 +37,7 @@ class MyLanguage extends GetView<LocaleCtrl> {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 60, vertical: 10),
               // width: double.infinity,
-              child: MyButton(
+              child: HyButton(
                 txt: 'عربي',
                 onPressed: () {
                   controller.changeLang('ar');
