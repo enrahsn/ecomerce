@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-
 import '../constant/colors.dart';
-
 class MyTextLogin extends StatelessWidget {
   final String txt;
   final String login;
-  final String scrName;
-  // final void Function() onTap;
-
-  // const MyTextLogin({super.key, required this.txt, required this.login, required this.scrName, required this.onTap});
-  const MyTextLogin({super.key, required this.txt, required this.login, required this.scrName,});
+  // final String destinationPage;
+  final void Function() onTap;
+  const MyTextLogin({super.key, required this.txt, required this.login, required this.onTap});
+  // const MyTextLogin({super.key, required this.txt, required this.login, required this.destinationPage,});
   @override
   Widget build(BuildContext context) {
     // double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
@@ -25,9 +22,9 @@ class MyTextLogin extends StatelessWidget {
         // TextButton(onPressed: (){}, child: const Text('Sign Up')),
         InkWell(
           // onTap: onTap,
-          onTap: () {
-            Navigator.pushNamed(context, scrName);
-          },
+            // destinationPage:AppRoute.signUp,
+          // onTap: () {Navigator.pushNamed(context, destinationPage);},
+          onTap: onTap,
           child: Text(
             // "Sign Up",
             login,
@@ -51,7 +48,6 @@ class MyTextLogin extends StatelessWidget {
                 style: TextStyle(
                   color: kMainColor,
                   fontSize: scrWidth * .03,
-                  
                 ),
               ),
                SizedBox(width:scrWidth * .05),
