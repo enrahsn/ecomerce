@@ -37,8 +37,6 @@ class Login extends StatelessWidget {
             // const MyLogo( img:  AssetImage('assets/images/r.png'), ),
             //  Image(image: const AssetImage('assets/images/r.png'),
           // width: 200,
-         
-        
           const SizedBox(height: 10,),
           MyTitleAndTxt(title: 'Welcom Back',txt: 'Sign In With Your Email And Password Or Continue With Social Media ',),
           // const Text("2".tr),
@@ -48,10 +46,11 @@ class Login extends StatelessWidget {
         const SizedBox(height: 30,),
         const MyTxtFormAuth(hint: 'Enter Your Passwoed',lbl: 'Password',icon: Icons.lock_clock_outlined),
         const SizedBox(height: 30,),
-        const MyTextLogin(txt: 'Forget Password', login: 'go to  ',scrName: 'Sign up',),
-        const MyButton(txt: 'Sign Up',),
-          ],
-          ),),
+        // const MyTextLogin(txt: 'Forget Password', login: 'go to  ',scrName: 'Sign up',),
+        const Text('Forget Password',textAlign: TextAlign.end,),
+        HyButton(txt: 'Sign In', onPressed: () {}),
+          ]),
+          ),
     );
   }
 }

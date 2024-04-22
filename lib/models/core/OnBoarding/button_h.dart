@@ -1,22 +1,35 @@
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import '../../../controller/boarding_ctrl.dart';
 import '../../constant/colors.dart';
-
- class MyButton extends GetView<BoardingCtrlImp> {
+ class HyButton extends StatelessWidget {
   // MyButton({super.key, this.txt, Function()? onPressed});
-  const MyButton({super.key, required this.txt, this.onPressed});
+  final String txt;
   final void Function()? onPressed;
-  //
- final String? txt;
+  const HyButton({super.key, required this.txt, this.onPressed});
   @override
   Widget build(BuildContext context) {
     double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
     double scrWidth  = MediaQuery.of(context).size.width;
    
-    return  Container(
+    return  MaterialButton(
+      onPressed:onPressed,
+    // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
+                    // controller.onNext();
+                    color: kAppbarColor,
+    textColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(scrWidth * .02)
+                    ),
+                    child: Text(txt,
+                    style: TextStyle(
+    fontSize: scrWidth * .029,
+    fontWeight: FontWeight.bold
+                    ),
+                    ),
+                    );
+  }
+}
+ /*
+Container(
                 padding: EdgeInsets.symmetric(horizontal: scrWidth * .1,vertical: scrHeight * .071),
                 // width: double.infinity,
                 width: scrWidth * .71,
@@ -27,12 +40,12 @@ import '../../constant/colors.dart';
                     onPressed:onPressed,
                   // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
                 // controller.onNext();
-                color: kPrimaryColor,
+                color: kAppbarColor,
                   textColor: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(scrWidth * .02)
                 ),
-                child: Text(txt!,
+                child: Text(txt,
                 style: TextStyle(
                   fontSize: scrWidth * .04,
                   fontWeight: FontWeight.bold
@@ -40,6 +53,4 @@ import '../../constant/colors.dart';
                 ),
                 ),
                 );
-  }
-}
- 
+ */

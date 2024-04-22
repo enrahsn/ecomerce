@@ -2,10 +2,16 @@ import '../constant/colors.dart';
 import 'package:flutter/material.dart';
 
 class MyTextLogin extends StatelessWidget {
-    const MyTextLogin({super.key,  Null Function()? onPressed, this.txt, this.login, this.scrName,});
+  const MyTextLogin({
+    super.key,
+    Null Function()? onPressed,
+    required this.txt,
+    this.login,
+    this.scrName,
+  });
 
   // const MyTextButton({super.key, this.text});
-  final String? txt;
+  final String txt;
   final String? login;
   final String? scrName;
 
@@ -13,7 +19,11 @@ class MyTextLogin extends StatelessWidget {
   Widget build(BuildContext context) {
     // double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
     double scrWidth = MediaQuery.of(context).size.width;
-    return Row(
+    return MaterialButton(
+      onPressed: () {},
+      child: Text(txt),
+    );
+    /*Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
@@ -38,5 +48,6 @@ class MyTextLogin extends StatelessWidget {
               ),
             ],
           );
-          }
+*/
+  }
 }
