@@ -1,4 +1,5 @@
 export 'button_txt.dart';
+export 'logo_h.dart';
 export 'route.dart';
 export 'title_txt.dart';
 export 'txt_field.dart';

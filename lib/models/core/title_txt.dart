@@ -22,7 +22,7 @@ final String? txt;
             margin: const EdgeInsets.symmetric(horizontal: 25),
             // child: const Text("Sign In With Your Email And Password Or Continue With Social Media ",
             child:  Text(txt!,
-            style: const TextStyle(fontSize: 16,color: AppColor.black),textAlign: TextAlign.center,)),
+            style: const TextStyle(fontSize: 14,color: AppColor.black),textAlign: TextAlign.center,)),
           
       ],
     );

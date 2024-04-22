@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../models/constant/img_assets.dart';
+import '../../models/core/logo_h.dart';
 import '../../models/core/title_txt.dart';
 import '../../models/core/txt_form_auth.dart';
 // import 'package:get/get.dart';
@@ -16,13 +18,30 @@ class Login extends StatelessWidget {
       backgroundColor: Colors.white,
       title: const Text('Sign In',style: TextStyle(color: Colors.black),),) ,
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 35),
+        padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 30),
         child: ListView(
           children: [
-          const SizedBox(height: 20,),
+            // Image.asset('assets/images/r.png'),
+             const MyLogo(txt: 'rady',),
+            // const MyLogo(txt: 'rady', img:  AssetImage(AppImgAssets.logo), ),
+            // const MyLogo(txt: 'rady', img:  AssetImage(AppImgAssets.store), ),
+            // const MyLogo(txt: 'rady', img:  AssetImage(AppImgAssets.market), ),
+            // const MyLogo(txt: 'rady', img:  AssetImage(AppImgAssets.logo), ),
+            // const MyLogo(txt: 'rady', img:  AssetImage(AppImgAssets.eng), ),
+            // const MyLogo(txt: 'rady', img:  AssetImage('assets/images/r.png'), ),
+            //  Image.asset(onBoardingList[i].image!,
+            //  MyLogo(txt: 'rady', img:  Image.asset(AppImgAssets(logo)), ),
+            //  MyLogo(txt: 'rady', img:  Image.asset('assets/images/logo.png'), ),
+            //  MyLogo(txt: 'rady', img:  Image.asset(AppImgAssets.logo), ),
+            // const MyLogo( img:  AssetImage('assets/images/r.png'), ),
+            //  Image(image: const AssetImage('assets/images/r.png'),
+          // width: 200,
+         
+        
+          const SizedBox(height: 10,),
           MyTitleAndTxt(title: 'Welcom Back',txt: 'Sign In With Your Email And Password Or Continue With Social Media ',),
           // const Text("2".tr),
-         const SizedBox(height: 65,),
+         const SizedBox(height: 35,),
         // const MyTxtField(hint: 'email'),
         const MyTxtFormAuth(hint: 'Enter Your Email',lbl: 'Email',icon: Icons.email_outlined,),
         const SizedBox(height: 30,),

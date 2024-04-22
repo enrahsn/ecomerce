@@ -33,12 +33,6 @@ class OnBoarding extends GetView<BoardingCtrlImp> {
               child: Column(
                 children: [
                   const MyDotBoarding(),
-                  // Buttony(txt: 'Continue',),
-                  // Buttony(txt: 'Continue',onPressed: () {controller.onNext();},),
-                  // MyButton(txt: 'Continue',),
-                  // MyButton(txt: 'Continue',onPressed: () {controller.onNext();},),
-                  // Spacer(),
-
                   const SizedBox(
                     height: 20,
                   ),
