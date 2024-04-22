@@ -10,22 +10,30 @@ import '../../constant/colors.dart';
     double scrHeight = MediaQuery.of(context).size.height; //افضل حل (حتى الان)
     double scrWidth  = MediaQuery.of(context).size.width;
    
-    return  MaterialButton(
-      onPressed:onPressed,
-    // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
-                    // controller.onNext();
-                    color: kAppbarColor,
-    textColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(scrWidth * .02)
-                    ),
-                    child: Text(txt,
-                    style: TextStyle(
-    fontSize: scrWidth * .029,
-    fontWeight: FontWeight.bold
-                    ),
-                    ),
-                    );
+    return  Container(
+      margin: const EdgeInsets.only(top: 8),
+      child: MaterialButton(
+        onPressed:onPressed,
+                  padding: EdgeInsets.symmetric(horizontal: scrWidth * .01,vertical: scrHeight * .029),
+      // Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginScreen()));
+                      // controller.onNext();
+                    // margin: const EdgeInsets.only(bottom: 30),
+                      color: kAppbarColor,
+                      // padding: scrWidth,
+      textColor: Colors.white,
+      //  width: scrWidth * .71,
+      //               height: scrHeight * .071,
+                      shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(scrWidth * .09)
+                      ),
+                      child: Text(txt,
+                      style: TextStyle(
+      fontSize: scrWidth * .033,
+      fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                      ),
+    );
   }
 }
  /*
@@ -34,7 +42,6 @@ Container(
                 // width: double.infinity,
                 width: scrWidth * .71,
                   height: scrHeight * .071,
-                  margin: const EdgeInsets.only(bottom: 30),
                   // child: MaterialButton(onPressed: () {},
                   child: MaterialButton(
                     onPressed:onPressed,

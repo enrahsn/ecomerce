@@ -1,11 +1,11 @@
 
+import 'package:ecommerce/models/constant/colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/core/logo_h.dart';
 import '../../models/core/onboarding/button_h.dart';
 import '../../models/core/title_txt.dart';
 import '../../models/core/txt_form_auth.dart';
-import '../../models/core/txt_login.dart';
 // import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
@@ -49,6 +49,18 @@ class Login extends StatelessWidget {
         // const MyTextLogin(txt: 'Forget Password', login: 'go to  ',scrName: 'Sign up',),
         const Text('Forget Password',textAlign: TextAlign.end,),
         HyButton(txt: 'Sign In', onPressed: () {}),
+        const SizedBox(height: 30,),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Spacer(),
+          Text("Don't have an account ? "),
+          Spacer(),
+          // SizedBox(width: 150,),
+          // TextButton(onPressed: (){}, child: const Text('Sign Up')),
+          InkWell(child: Text("Sign Up",style: TextStyle(color: kPrimaryColor,fontWeight: FontWeight.bold),),),
+          Spacer(),
+        ],)
           ]),
           ),
     );
