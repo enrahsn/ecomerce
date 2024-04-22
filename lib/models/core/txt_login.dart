@@ -2,7 +2,7 @@ import '../constant/colors.dart';
 import 'package:flutter/material.dart';
 
 class MyTextLogin extends StatelessWidget {
-    const MyTextLogin({super.key, required Null Function() onPressed, this.txt, this.login, this.scrName,});
+    const MyTextLogin({super.key,  Null Function()? onPressed, this.txt, this.login, this.scrName,});
 
   // const MyTextButton({super.key, this.text});
   final String? txt;
@@ -18,9 +18,11 @@ class MyTextLogin extends StatelessWidget {
             children: <Widget>[
               Text(
                 txt!,
+                textAlign: TextAlign.end,
                 style: TextStyle(
                   color: kMainColor,
-                  fontSize: scrWidth * .035,
+                  fontSize: scrWidth * .03,
+                  
                 ),
               ),
                SizedBox(width:scrWidth * .05),

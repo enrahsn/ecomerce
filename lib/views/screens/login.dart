@@ -1,10 +1,11 @@
 
 import 'package:flutter/material.dart';
 
-import '../../models/constant/img_assets.dart';
 import '../../models/core/logo_h.dart';
+import '../../models/core/onboarding/button_h.dart';
 import '../../models/core/title_txt.dart';
 import '../../models/core/txt_form_auth.dart';
+import '../../models/core/txt_login.dart';
 // import 'package:get/get.dart';
 
 class Login extends StatelessWidget {
@@ -46,7 +47,9 @@ class Login extends StatelessWidget {
         const MyTxtFormAuth(hint: 'Enter Your Email',lbl: 'Email',icon: Icons.email_outlined,),
         const SizedBox(height: 30,),
         const MyTxtFormAuth(hint: 'Enter Your Passwoed',lbl: 'Password',icon: Icons.lock_clock_outlined),
-        // const MyTxtField(hint: 'password'),
+        const SizedBox(height: 30,),
+        const MyTextLogin(txt: 'Forget Password', login: 'go to  ',scrName: 'Sign up',),
+        const MyButton(txt: 'Sign Up',),
           ],
           ),),
     );
