@@ -20,7 +20,7 @@ class BoardingCtrlImp extends BoardingCtrl {
   void onNext() {
     currentPageIndex++;
     if (currentPageIndex > onBoardingList.length -1) {
-      Get.offAllNamed(AppRoute.login);
+      Get.offAllNamed(AppRoutes.login);
     } else {
     pageController.animateToPage(currentPageIndex,
         duration: const Duration(milliseconds: 900), curve: Curves.easeInOut);

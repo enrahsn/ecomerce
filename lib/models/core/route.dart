@@ -10,8 +10,8 @@ Map<String, Widget Function(BuildContext)> routes = {
   // '/home': (_) => const Home(),
   // '/login': (_) => const Login(),
   // 'login': (context) => const Login(),
-  AppRoute.lang: (context) => const MyLanguage(),
-  AppRoute.login: (context) => const Login(),
-  AppRoute.signUp: (context) => const SignUp(),
-  AppRoute.onboarding: (context) =>  const OnBoarding(),
+  AppRoutes.lang: (context) => const MyLanguage(),
+  AppRoutes.login: (context) => const Login(),
+  AppRoutes.signup: (context) => const SignUp(),
+  AppRoutes.onboarding: (context) =>  const OnBoarding(),
 };

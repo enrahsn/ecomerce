@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../models/core/class/login_ctrl.dart';
+import '../../models/core/class/signin_ctrl.dart';
 import '../../models/core/logo_h.dart';
 import '../../models/core/onboarding/button_h.dart';
 import '../../models/core/title_txt.dart';
@@ -12,7 +13,7 @@ class SignUp extends StatelessWidget {
   const SignUp({super.key});
   @override
   Widget build(BuildContext context) {
-    LoginCtrlrImp controller = Get.put(LoginCtrlrImp());
+    LoginCtrlrImp controller = Get.put(SiginCtrlrImp());
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

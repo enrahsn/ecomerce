@@ -30,7 +30,7 @@ class MyLanguage extends GetView<LocaleCtrl> {
                 txt: 'English',
                 onPressed: () {
                   controller.changeLang('en');
-                  Get.toNamed(AppRoute.onboarding);
+                  Get.toNamed(AppRoutes.onboarding);
                 },
               ),
             ),
@@ -41,7 +41,7 @@ class MyLanguage extends GetView<LocaleCtrl> {
                 txt: 'عربي',
                 onPressed: () {
                   controller.changeLang('ar');
-                  Get.toNamed(AppRoute.onboarding);
+                  Get.toNamed(AppRoutes.onboarding);
                 },
               ),
             ),
