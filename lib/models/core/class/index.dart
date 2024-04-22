@@ -1,5 +1,5 @@
 export 'app_route.dart';
 export 'login_ctrl.dart';
 export 'on_boarding_model.dart';
-export 'signin_ctrl.dart';
+export 'signup_ctrl.dart';
 

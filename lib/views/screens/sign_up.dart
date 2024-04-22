@@ -1,19 +1,20 @@
+import 'package:ecommerce/models/core/class/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../models/core/class/login_ctrl.dart';
-import '../../models/core/class/signin_ctrl.dart';
 import '../../models/core/logo_h.dart';
 import '../../models/core/onboarding/button_h.dart';
 import '../../models/core/title_txt.dart';
 import '../../models/core/txt_form_auth.dart';
 import '../../models/core/txt_login.dart';
+// import 'log_in.dart';
 
 // import 'package:get/get.dart';
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
   @override
   Widget build(BuildContext context) {
-    LoginCtrlrImp controller = Get.put(SiginCtrlrImp());
+    SigUpCtrlrImp controller = Get.put(SigUpCtrlrImp());
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -91,7 +92,7 @@ class SignUp extends StatelessWidget {
               // destinationPage: AppRoute.signUp,
               // onTap : () {Get.toNamed(AppRoute.signUp);},
               onTap: () {
-                controller.goToSignIn();
+                controller.goToLogIn();
               })
         ]),
       ),

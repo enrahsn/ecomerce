@@ -4,19 +4,19 @@ import 'app_route.dart';
 
 abstract class SignUpCtrlr extends GetxController {
   signup();
-  goToSignUp();
+  goToLogIn();
 }
 
-class SiginCtrlrImp extends SignUpCtrlr {
+class SigUpCtrlrImp extends SignUpCtrlr {
   @override
-  goToSignUp() {
-      Get.toNamed(AppRoutes.signup);
-
+  goToLogIn() {
+    Get.toNamed(AppRoutes.login);
   }
 
   @override
   signup() {
-    
+   
   }
+
 
 }

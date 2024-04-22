@@ -8,8 +8,8 @@ import '../../models/core/txt_form_auth.dart';
 import '../../models/core/txt_login.dart';
 
 // import 'package:get/get.dart';
-class Login extends StatelessWidget {
-  const Login({super.key});
+class LogIn extends StatelessWidget {
+  const LogIn({super.key});
   @override
   Widget build(BuildContext context) {
     LoginCtrlrImp controller = Get.put(LoginCtrlrImp());
