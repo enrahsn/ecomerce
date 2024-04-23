@@ -1,8 +1,6 @@
 import 'package:ecommerce/models/core/class/index.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../models/core/class/login_ctrl.dart';
-import '../../models/core/logo_h.dart';
 import '../../models/core/onboarding/button_h.dart';
 import '../../models/core/title_txt.dart';
 import '../../models/core/txt_form_auth.dart';
@@ -30,9 +28,9 @@ class SignUp extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 30),
         child: ListView(children: [
           // Image.asset('assets/images/r.png'),
-          const MyLogo(
-            txt: 'rady',
-          ),
+          // const MyLogo(
+          //   txt: 'rady',
+          // ),
           const SizedBox(
             height: 10,
           ),
